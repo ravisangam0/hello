@@ -528,6 +528,8 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
 }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- Vercel Speed Insights -->
+<script src="/speed-insights.bundle.js" defer></script>
 </head>
 <body>
 
@@ -1232,7 +1234,7 @@ async function handleSubscribe() {
   showToast('🎉 Subscribed! Welcome to SD Digital Hub family.');
 }
 
-/* ── Visitor Tracking ────────────────────────────────────────── */
+/* ── Visitor Tracking ───────────────────────────────────────��── */
 async function trackVisit(page) {
   try {
     await supabase('page_views', { method: 'POST', body: JSON.stringify({ page, viewed_at: new Date().toISOString() }) });

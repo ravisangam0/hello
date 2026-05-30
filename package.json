@@ -1,0 +1,22 @@
+{
+  "name": "sddigitalhub",
+  "version": "1.0.0",
+  "description": "SD Digital Hub - Premium Digital Agency Website",
+  "scripts": {
+    "build:analytics": "esbuild speed-insights.js --bundle --minify --outfile=speed-insights.bundle.js --format=iife",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "digital-agency",
+    "web-design",
+    "vercel-speed-insights"
+  ],
+  "author": "SD Digital Hub",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
