@@ -528,6 +528,11 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
 }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<!-- Vercel Speed Insights -->
+<script type="module">
+  import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1/dist/index.js';
+  injectSpeedInsights();
+</script>
 </head>
 <body>
 
@@ -1143,7 +1148,7 @@ function initHeroCanvas() {
   draw();
 }
 
-/* ── Floating Chat Buttons ───────────────────────────────────── */
+/* ── Floating Chat Buttons ─��─────────────────────────────────── */
 let liveChatOpen = false;
 function toggleLiveChat() {
   liveChatOpen = !liveChatOpen;
