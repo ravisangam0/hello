@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ============================================================
+     SD DIGITAL HUB — PREMIUM WEBSITE
+     Version: 2.0
+     Color Theme: Royal Blue (#0A2463), White (#FFFFFF), Gold (#D4AF37)
+     Database: Supabase (live integration)
+     ============================================================ -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════════════════════════════════════════════════
+     FULL SEO — SD DIGITAL HUB
+     ═══════════════════════════════════════════════════════ -->
+<title>SD Digital Hub | Web Design & Digital Marketing Agency in India</title>
+<meta name="description" content="SD Digital Hub is a top digital agency in India — web design, branding, SEO, digital marketing & mobile apps. 200+ projects delivered. Call +91 9973362849 for a free quote.">
+<meta name="keywords" content="web design India, digital marketing agency India, website development India, SEO services India, branding agency Patna, mobile app development Bihar, SD Digital Hub, affordable web design India, digital agency Bihar">
+<meta name="author" content="SD Digital Hub">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A2463">
+<meta name="revisit-after" content="7 days">
+<meta name="language" content="English">
+<link rel="canonical" href="https://sddigitalhub.in/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn previews) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sddigitalhub.in/">
+<meta property="og:title" content="SD Digital Hub | Web Design & Digital Marketing Agency in India">
+<meta property="og:description" content="Transform your business with world-class web design, branding, SEO & digital marketing. 200+ projects delivered. Free consultation available.">
+<meta property="og:image" content="https://sddigitalhub.in/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="SD Digital Hub">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@sddigitalhub">
+<meta name="twitter:title" content="SD Digital Hub | Web Design & Digital Marketing Agency">
+<meta name="twitter:description" content="Transform your business with world-class web design, branding & SEO. Free consultation available.">
+<meta name="twitter:image" content="https://sddigitalhub.in/og-image.jpg">
+
+<!-- Local SEO / Geo Tags -->
+<meta name="geo.region" content="IN-BR">
+<meta name="geo.placename" content="Patna, Bihar, Narkatiaganj, west champaran, east champaran,bettiah">
+<meta name="geo.position" content="25.5941;85.1376 ,26.1209;85.3647,26.6486;84.9089,26.7400;84.7400,26.8028;84.5031,27.1060;84.4630,27.1630;84.3230">
+<meta name="ICBM" content="25.5941, 85.1376 ,26.1209;85.3647,26.6486;84.9089,26.7400;84.7400,26.8028;84.5031,27.1060;84.4630,27.1630;84.3230">
+
+<!-- Schema.org Rich Results for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SD Digital Hub",
+  "description": "SD Digital Hub is a leading digital agency in India offering web design, branding, SEO, digital marketing and mobile app development services.",
+  "url": "https://sddigitalhub.in",
+  "logo": "https://sddigitalhub.in/logo.png",
+  "image": "https://sddigitalhub.in/og-image.jpg",
+  "telephone": "+91-9973362849",
+  "email": "sdhelp.in@gmail.com",
+  "foundingDate": "2020",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Patna",
+    "addressRegion": "Bihar",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": "25.5941", "longitude": "85.1376" },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00", "closes": "19:00"
+  }],
+  "priceRange": "₹₹",
+  "areaServed": ["ndia","Bihar","Patna", "Narkatiaganj", "west champaran" ,"east champaran", "bettiah"],
+  "serviceType": ["Web Design","Web Development","Digital Marketing","SEO","Branding","Mobile App Development"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "47", "bestRating": "5" },
+  "sameAs": [
+    "https://www.facebook.com/sddigitalhub",
+    "https://www.instagram.com/sddigitalhub",
+    "https://www.linkedin.com/company/sddigitalhub"
+  ]
+}
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- ══ CONFIGURATION ══════════════════════════════════════════ -->
+<script>
+  // ── Supabase Config ──────────────────────────────────────────
+  const SUPABASE_URL     = 'https://uihfadvfmxkikoncytae.supabase.co';
+  const SUPABASE_ANON_KEY= 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVpaGZhZHZmbXhraWtvbmN5dGFlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAwMjc3NTUsImV4cCI6MjA5NTYwMzc1NX0.mex-ucpBocgO3GyNfHtUVTFahCfb6Mc9Sa7I2OaRkG4';
+
+  // ── Agency Details ───────────────────────────────────────────
+  const AGENCY_NAME      = 'SD Digital Hub';
+  const AGENCY_TAGLINE   = 'Your Digital Partner';
+  const AGENCY_PHONE     = '+91 9973362849';
+  const AGENCY_EMAIL     = 'sdhelp.in@gmail.com';
+  const AGENCY_ADDRESS   = 'India';
+  const WHATSAPP_NUMBER  = '918986003559'; // country code + number, no +
+
+  // ── Admin Access ─────────────────────────────────────────────
+  const ADMIN_SECRET_HASH = 'sddigitalhub-admin-2025';
+
+  // ── Chat Config ──────────────────────────────────────────────
+  const LIVE_CHAT_RESPONSE  = 'Responds within 30 minutes';
+  const WHATSAPP_RESPONSE   = 'Responds within 1 hour';
+
+  // ── Services ─────────────────────────────────────────────────
+  const SERVICES = [
+    { icon: '🌐', title: 'Web Design & Dev', desc: 'Pixel-perfect websites built for performance and conversion.' },
+    { icon: '🎨', title: 'Brand Identity', desc: 'Logos, guidelines, and visual systems that define your brand.' },
+    { icon: '📈', title: 'Digital Marketing', desc: 'SEO, PPC, and social strategies that drive real results.' },
+    { icon: '📱', title:  'Support Team', desc: 'we offer 24*7 chat support team & call support team.' },
+    { icon: '🤖', title: 'AI Solutions', desc: 'Custom AI tools and automation to scale your operations.' },
+    { icon: '📊', title: 'Analytics & SEO', desc: 'Data insights and optimization that keep you ahead.' }
+  ];
+
+  const STATS = [
+    { number: '50+', label: 'Projects Delivered' },
+    { number: '98%', label: 'Client Satisfaction' },
+    { number: '15+', label: 'Industry Awards' },
+    { number: '10+', label: 'Team Members' }
+  ];
+
+  const TEAM_MEMBERS = [
+    { name: 'Harshvardhan', role: 'Founder & CEO', bio: '15+ years in digital strategy and business transformation.', photo: null, linkedin: '#', twitter: '#' },
+    { name: 'Priya Sharma', role: 'Creative Director', bio: 'Award-winning designer with a passion for visual storytelling.', photo: null, linkedin: '#', twitter: '#' },
+    { name: 'Rahul Verma', role: 'Head of Technology', bio: 'Full-stack architect building scalable digital products.', photo: null, linkedin: '#', twitter: '#' },
+    { name: 'Sneha Patel', role: 'Marketing Strategist', bio: 'Data-driven marketer growing brands across digital channels.', photo: null, linkedin: '#', twitter: '#' }
+  ];
+
+  // Blog posts loaded dynamically from Supabase
+  let BLOG_POSTS = [];
+</script>
+
+<style>
+/* ══════════════════════════════════════════════════════════════
+   CSS VARIABLES
+   ══════════════════════════════════════════════════════════════ */
+:root {
+  --blue-900: #030D2B;
+  --blue-800: #061952;
+  --blue-700: #0A2463;
+  --blue-600: #0D3080;
+  --blue-500: #1449B0;
+  --blue-400: #2060D0;
+  --blue-300: #5A8FE8;
+  --blue-200: #A8C4F5;
+  --blue-100: #D6E6FB;
+  --blue-50:  #EDF4FF;
+
+  --gold-900: #3D2C00;
+  --gold-800: #7A5800;
+  --gold-700: #B08000;
+  --gold-600: #C89A00;
+  --gold-500: #D4AF37;
+  --gold-400: #E8C84B;
+  --gold-300: #F0D870;
+  --gold-200: #F7EBAB;
+  --gold-100: #FBF5D9;
+  --gold-50:  #FEFBEF;
+
+  --white: #FFFFFF;
+  --off-white: #F8F9FD;
+  --gray-100: #F0F2F8;
+  --gray-200: #E2E6F0;
+  --gray-300: #C8CDE0;
+  --gray-400: #9AA3C0;
+  --gray-500: #6B758F;
+  --gray-600: #4A5268;
+  --gray-700: #2E3347;
+  --gray-800: #1C2030;
+  --gray-900: #0E1018;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --section-pad: 100px;
+  --container-max: 1280px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-fast: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--font-body); color: var(--gray-800); background: var(--white); overflow-x: hidden; line-height: 1.6; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: var(--font-body); }
+input, textarea, select { font-family: var(--font-body); outline: none; border: none; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--blue-900); }
+::-webkit-scrollbar-thumb { background: var(--gold-500); border-radius: 3px; }
+
+.container { max-width: var(--container-max); margin: 0 auto; padding: 0 40px; }
+.section { padding: var(--section-pad) 0; }
+.section-alt { background: var(--off-white); }
+.section-dark { background: var(--blue-900); color: var(--white); }
+
+.section-label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-500); display: block; margin-bottom: 16px; }
+.section-title { font-family: var(--font-display); font-size: clamp(32px, 4vw, 52px); font-weight: 700; line-height: 1.15; color: var(--blue-700); }
+.section-dark .section-title { color: var(--white); }
+.section-title span { color: var(--gold-500); font-style: italic; }
+.section-subtitle { font-size: 18px; color: var(--gray-500); margin-top: 16px; max-width: 560px; }
+.section-dark .section-subtitle { color: var(--blue-200); }
+
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; border-radius: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0.02em; transition: all 0.3s var(--ease); position: relative; overflow: hidden; }
+.btn-primary { background: var(--gold-500); color: var(--blue-900); }
+.btn-primary:hover { background: var(--gold-400); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(212,175,55,0.35); }
+.btn-outline { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: var(--gold-500); color: var(--gold-500); transform: translateY(-2px); }
+.btn-blue { background: var(--blue-700); color: var(--white); }
+.btn-blue:hover { background: var(--blue-600); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(10,36,99,0.3); }
+.btn svg { transition: transform 0.3s var(--ease); }
+.btn:hover svg { transform: translateX(4px); }
+
+.page { display: none; }
+.page.active { display: block; }
+
+/* HEADER */
+#site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; transition: all 0.4s var(--ease); }
+#site-header.transparent { background: transparent; }
+#site-header.scrolled { background: rgba(3, 13, 43, 0.95); backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(212,175,55,0.2); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 22px 40px; max-width: var(--container-max); margin: 0 auto; }
+.nav-logo { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.logo-text { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--white); letter-spacing: -0.01em; }
+.logo-text span { color: var(--gold-500); }
+.nav-links { display: flex; align-items: center; gap: 36px; }
+.nav-link { font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.75); letter-spacing: 0.03em; transition: color 0.2s; cursor: pointer; position: relative; }
+.nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1.5px; background: var(--gold-500); transition: width 0.3s var(--ease); }
+.nav-link:hover { color: var(--white); }
+.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+.nav-link.active { color: var(--white); }
+.nav-actions { display: flex; align-items: center; gap: 16px; }
+.mobile-menu-btn { display: none; flex-direction: column; gap: 5px; padding: 8px; cursor: pointer; }
+.mobile-menu-btn span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s var(--ease); }
+.mobile-nav { display: none; position: fixed; inset: 0; background: var(--blue-900); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 32px; }
+.mobile-nav.open { display: flex; }
+.mobile-nav .nav-link { font-size: 28px; font-family: var(--font-display); color: rgba(255,255,255,0.8); }
+.mobile-nav-close { position: absolute; top: 24px; right: 24px; font-size: 32px; color: var(--white); cursor: pointer; }
+
+/* HERO */
+#hero { min-height: 100vh; background: var(--blue-900); position: relative; display: flex; align-items: center; overflow: hidden; }
+#hero-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+#hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(3,13,43,0.85) 0%, rgba(10,36,99,0.6) 50%, rgba(3,13,43,0.7) 100%); pointer-events: none; }
+.hero-content { position: relative; z-index: 10; max-width: var(--container-max); margin: 0 auto; padding: 140px 40px 100px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.3); border-radius: 100px; padding: 6px 16px; font-size: 12px; font-family: var(--font-mono); letter-spacing: 0.1em; color: var(--gold-400); text-transform: uppercase; margin-bottom: 28px; animation: fadeInUp 0.8s var(--ease) both; }
+.hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--gold-500); border-radius: 50%; animation: pulse 2s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.3); } }
+.hero-title { font-family: var(--font-display); font-size: clamp(40px, 5vw, 70px); font-weight: 900; line-height: 1.05; color: var(--white); margin-bottom: 28px; animation: fadeInUp 0.8s var(--ease) 0.1s both; }
+.hero-title .line-gold { color: var(--gold-500); font-style: italic; }
+.hero-title .line-outline { -webkit-text-stroke: 1.5px rgba(255,255,255,0.4); color: transparent; }
+.hero-desc { font-size: 18px; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 480px; margin-bottom: 44px; animation: fadeInUp 0.8s var(--ease) 0.2s both; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeInUp 0.8s var(--ease) 0.3s both; }
+.hero-right { display: flex; justify-content: center; align-items: center; animation: fadeInUp 0.8s var(--ease) 0.2s both; }
+.hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; flex-direction: column; align-items: center; gap: 8px; cursor: pointer; animation: fadeInUp 1s var(--ease) 0.8s both; }
+.hero-scroll span { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; color: rgba(255,255,255,0.4); text-transform: uppercase; }
+.scroll-line { width: 1px; height: 50px; background: linear-gradient(to bottom, rgba(212,175,55,0.6), transparent); animation: scrollAnim 1.5s ease-in-out infinite; }
+@keyframes scrollAnim { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform: scaleY(1); transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* MARQUEE */
+.marquee-strip { background: var(--gold-500); padding: 14px 0; overflow: hidden; white-space: nowrap; }
+.marquee-inner { display: inline-flex; animation: marquee 25s linear infinite; }
+.marquee-inner span { font-family: var(--font-mono); font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-900); padding: 0 40px; }
+.marquee-inner span::after { content: '★'; margin-left: 40px; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* SERVICES */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 60px; background: var(--gray-200); border: 2px solid var(--gray-200); border-radius: 16px; overflow: hidden; }
+.service-card { background: var(--white); padding: 48px 40px; position: relative; transition: background 0.3s; cursor: pointer; }
+.service-card:hover { background: var(--blue-700); }
+.service-icon { font-size: 36px; margin-bottom: 20px; display: block; }
+.service-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--blue-700); margin-bottom: 12px; transition: color 0.3s; }
+.service-card p { font-size: 14px; color: var(--gray-500); line-height: 1.65; transition: color 0.3s; }
+.service-card:hover h3 { color: var(--gold-400); }
+.service-card:hover p { color: rgba(255,255,255,0.7); }
+.service-card-arrow { position: absolute; bottom: 32px; right: 32px; width: 32px; height: 32px; border-radius: 50%; background: var(--gray-100); display: flex; align-items: center; justify-content: center; transition: all 0.3s var(--ease); }
+.service-card:hover .service-card-arrow { background: var(--gold-500); transform: rotate(-45deg); }
+.service-card-arrow svg { width: 14px; color: var(--gray-600); }
+.service-card:hover .service-card-arrow svg { color: var(--blue-900); }
+
+/* STATS */
+.stats-section { background: var(--blue-700); padding: 80px 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; max-width: var(--container-max); margin: 0 auto; padding: 0 40px; }
+.stat-item { padding: 40px; text-align: center; border-right: 1px solid rgba(255,255,255,0.1); }
+.stat-item:last-child { border-right: none; }
+.stat-number { font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--gold-500); line-height: 1; display: block; }
+.stat-label { font-size: 13px; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; margin-top: 8px; text-transform: uppercase; }
+
+/* ABOUT */
+.about-hero { background: var(--blue-900); padding: 160px 0 100px; text-align: center; position: relative; overflow: hidden; }
+.about-hero::before { content: 'SD'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: var(--font-display); font-size: 220px; font-weight: 900; color: rgba(255,255,255,0.03); white-space: nowrap; pointer-events: none; }
+.page-hero-tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-500); margin-bottom: 16px; }
+.page-hero-title { font-family: var(--font-display); font-size: clamp(48px, 6vw, 80px); font-weight: 900; color: var(--white); line-height: 1.1; }
+.page-hero-title em { color: var(--gold-500); }
+.about-story { padding: 100px 0; }
+.about-story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.about-story-img { width: 100%; aspect-ratio: 4/5; background: linear-gradient(135deg, var(--blue-700), var(--blue-800)); border-radius: 12px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.about-story-img-inner { font-size: 80px; opacity: 0.3; }
+.about-story-badge { position: absolute; bottom: -24px; right: -24px; background: var(--gold-500); color: var(--blue-900); padding: 24px 32px; border-radius: 8px; font-family: var(--font-display); }
+.about-story-badge strong { display: block; font-size: 40px; font-weight: 900; line-height: 1; }
+.about-story-badge span { font-size: 13px; font-weight: 600; }
+.about-story-text .section-title { margin-bottom: 24px; }
+.about-story-text p { font-size: 16px; color: var(--gray-600); line-height: 1.8; margin-bottom: 20px; }
+.about-values { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.about-value { padding: 20px; background: var(--off-white); border-radius: 8px; border-left: 3px solid var(--gold-500); }
+.about-value h4 { font-size: 14px; font-weight: 600; color: var(--blue-700); margin-bottom: 4px; }
+.about-value p { font-size: 13px; color: var(--gray-500); }
+
+/* BLOG */
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 60px; }
+.blog-card { border-radius: 12px; overflow: hidden; background: var(--white); box-shadow: 0 4px 24px rgba(10,36,99,0.08); transition: transform 0.3s var(--ease), box-shadow 0.3s; cursor: pointer; }
+.blog-card:hover { transform: translateY(-8px); box-shadow: 0 20px 48px rgba(10,36,99,0.15); }
+.blog-card-image { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--blue-700), var(--blue-800)); display: flex; align-items: center; justify-content: center; font-size: 48px; position: relative; overflow: hidden; }
+.blog-card-image img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+.blog-card-cat { position: absolute; top: 16px; left: 16px; background: var(--gold-500); color: var(--blue-900); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; padding: 4px 12px; border-radius: 100px; z-index: 2; }
+.blog-card-body { padding: 28px; }
+.blog-card-meta { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--gray-400); margin-bottom: 12px; }
+.blog-card-meta span::before { content: '·'; margin-right: 12px; }
+.blog-card-meta span:first-child::before { display: none; }
+.blog-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--blue-800); margin-bottom: 12px; line-height: 1.3; }
+.blog-card p { font-size: 14px; color: var(--gray-500); line-height: 1.65; }
+.blog-card-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; font-size: 13px; font-weight: 600; color: var(--blue-700); transition: gap 0.2s; }
+.blog-card-link:hover { gap: 10px; }
+.blog-empty { text-align:center; padding:60px 20px; color:var(--gray-400); grid-column:1/-1; }
+.blog-empty span { font-size: 48px; display:block; margin-bottom:16px; }
+
+/* DEMO/SERVICES PAGE */
+.demo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 60px; }
+.demo-card { background: var(--white); border: 1.5px solid var(--gray-200); border-radius: 16px; padding: 48px; position: relative; overflow: hidden; transition: border-color 0.3s, transform 0.3s var(--ease); }
+.demo-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--blue-700), var(--gold-500)); transform: scaleX(0); transition: transform 0.3s var(--ease); }
+.demo-card:hover { border-color: var(--blue-300); transform: translateY(-4px); }
+.demo-card:hover::before { transform: scaleX(1); }
+.demo-card-icon { width: 64px; height: 64px; background: var(--blue-50); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 28px; margin-bottom: 24px; }
+.demo-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--blue-800); margin-bottom: 12px; }
+.demo-card p { font-size: 15px; color: var(--gray-500); line-height: 1.7; margin-bottom: 28px; }
+.demo-features { list-style: none; margin-bottom: 32px; }
+.demo-features li { font-size: 14px; color: var(--gray-600); padding: 6px 0; padding-left: 20px; position: relative; }
+.demo-features li::before { content: ''; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; background: var(--gold-500); border-radius: 50%; }
+
+/* TEAM */
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px; }
+.team-card { text-align: center; cursor: pointer; }
+.team-photo { width: 100%; aspect-ratio: 3/4; background: linear-gradient(135deg, var(--blue-800), var(--blue-700)); border-radius: 12px; margin-bottom: 20px; overflow: hidden; position: relative; transition: transform 0.3s var(--ease); display: flex; align-items: center; justify-content: center; }
+.team-card:hover .team-photo { transform: scale(1.02); }
+.team-photo-placeholder { font-size: 64px; opacity: 0.4; }
+.team-photo-overlay { position: absolute; inset: 0; background: rgba(10,36,99,0.8); display: flex; align-items: center; justify-content: center; gap: 16px; opacity: 0; transition: opacity 0.3s; }
+.team-card:hover .team-photo-overlay { opacity: 1; }
+.team-social-btn { width: 40px; height: 40px; background: var(--gold-500); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--blue-900); font-size: 16px; transition: transform 0.2s var(--ease-fast); }
+.team-social-btn:hover { transform: scale(1.1); }
+.team-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--blue-800); }
+.team-card .role { font-size: 13px; color: var(--gold-600); font-weight: 600; margin: 4px 0 8px; letter-spacing: 0.05em; }
+.team-card .bio { font-size: 13px; color: var(--gray-500); }
+
+/* CONTACT */
+.contact-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: start; padding: 80px 0; }
+.contact-info h2 { font-family: var(--font-display); font-size: 40px; font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 20px; }
+.contact-info h2 em { color: var(--gold-500); }
+.contact-info p { color: rgba(255,255,255,0.6); font-size: 16px; margin-bottom: 40px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
+.contact-detail-icon { width: 44px; height: 44px; background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.3); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
+.contact-detail-text strong { display: block; font-size: 13px; color: var(--gold-400); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 2px; }
+.contact-detail-text span { color: rgba(255,255,255,0.7); font-size: 15px; }
+.contact-form-wrap { background: var(--white); border-radius: 16px; padding: 48px; box-shadow: 0 32px 64px rgba(0,0,0,0.3); }
+.form-title { font-family: var(--font-display); font-size: 24px; font-weight: 700; color: var(--blue-800); margin-bottom: 8px; }
+.form-subtitle { font-size: 14px; color: var(--gray-500); margin-bottom: 32px; }
+.form-group { margin-bottom: 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-600); margin-bottom: 8px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 18px; background: var(--off-white); border: 1.5px solid var(--gray-200); border-radius: 8px; font-size: 15px; color: var(--gray-800); transition: border-color 0.2s, box-shadow 0.2s; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue-500); box-shadow: 0 0 0 3px rgba(10,36,99,0.08); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-group select { appearance: none; cursor: pointer; }
+.form-submit { width: 100%; padding: 16px; background: var(--blue-700); color: var(--white); border-radius: 8px; font-size: 15px; font-weight: 600; letter-spacing: 0.05em; transition: all 0.3s var(--ease); cursor: pointer; border: none; }
+.form-submit:hover { background: var(--blue-600); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(10,36,99,0.3); }
+.form-success { display: none; text-align: center; padding: 40px; }
+.form-success .success-icon { font-size: 48px; margin-bottom: 16px; }
+.form-success h3 { font-family: var(--font-display); font-size: 24px; color: var(--blue-700); margin-bottom: 8px; }
+.form-success p { color: var(--gray-500); }
+
+/* FOOTER */
+#site-footer { background: var(--gray-900); color: var(--white); padding: 80px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 60px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.footer-brand .logo-text { font-size: 24px; }
+.footer-brand p { color: rgba(255,255,255,0.45); font-size: 14px; line-height: 1.7; margin: 16px 0 28px; max-width: 280px; }
+.footer-socials { display: flex; gap: 12px; }
+.footer-social-link { width: 38px; height: 38px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 15px; transition: all 0.2s; cursor: pointer; }
+.footer-social-link:hover { background: var(--gold-500); border-color: var(--gold-500); color: var(--blue-900); }
+.footer-col h4 { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-500); margin-bottom: 20px; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul li a { font-size: 14px; color: rgba(255,255,255,0.5); transition: color 0.2s; cursor: pointer; }
+.footer-col ul li a:hover { color: var(--white); }
+.footer-subscribe { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 32px; margin-top: 40px; display: flex; align-items: center; gap: 24px; }
+.footer-subscribe-text h4 { font-family: var(--font-display); font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.footer-subscribe-text p { font-size: 13px; color: rgba(255,255,255,0.5); }
+.subscribe-form { display: flex; gap: 0; flex: 1; max-width: 400px; }
+.subscribe-input { flex: 1; padding: 12px 20px; background: rgba(255,255,255,0.08); border: 1.5px solid rgba(255,255,255,0.15); border-right: none; border-radius: 8px 0 0 8px; font-size: 14px; color: var(--white); transition: border-color 0.2s; }
+.subscribe-input::placeholder { color: rgba(255,255,255,0.3); }
+.subscribe-input:focus { border-color: var(--gold-500); }
+.subscribe-btn { padding: 12px 24px; background: var(--gold-500); color: var(--blue-900); border-radius: 0 8px 8px 0; font-size: 14px; font-weight: 700; cursor: pointer; border: none; transition: background 0.2s; white-space: nowrap; }
+.subscribe-btn:hover { background: var(--gold-400); }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; }
+.footer-bottom p { font-size: 13px; color: rgba(255,255,255,0.3); }
+.footer-bottom-links { display: flex; gap: 24px; }
+.footer-bottom-links a { font-size: 12px; color: rgba(255,255,255,0.3); transition: color 0.2s; cursor: pointer; }
+.footer-bottom-links a:hover { color: var(--gold-500); }
+
+
+
+
+/* MODALS */
+.modal-overlay { position: fixed; inset: 0; background: rgba(3,13,43,0.75); backdrop-filter: blur(6px); z-index: 10000; display: flex; align-items: center; justify-content: center; padding: 24px; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+.modal-box { background: var(--white); border-radius: 20px; padding: 48px; max-width: 520px; width: 100%; position: relative; transform: scale(0.9) translateY(20px); transition: all 0.4s var(--ease); max-height: 90vh; overflow-y: auto; }
+.modal-overlay.open .modal-box { transform: scale(1) translateY(0); }
+.modal-close { position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; background: var(--gray-100); border-radius: 50%; border: none; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.modal-close:hover { background: var(--gray-200); }
+.modal-icon { font-size: 40px; margin-bottom: 16px; }
+.modal-title { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--blue-800); margin-bottom: 8px; }
+.modal-subtitle { font-size: 15px; color: var(--gray-500); margin-bottom: 32px; }
+
+/* TOAST */
+#toast { position: fixed; bottom: 28px; right: 28px; z-index: 9999; background: var(--gray-800); color: var(--white); padding: 14px 24px; border-radius: 10px; font-size: 14px; font-weight: 500; transform: translateY(20px); opacity: 0; transition: all 0.3s var(--ease); pointer-events: none; border-left: 3px solid var(--gold-500); }
+#toast.show { transform: translateY(0); opacity: 1; }
+
+/* REVEAL ANIMATIONS */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.reveal.revealed { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-item:nth-child(2) { border-right: none; }
+  .about-story-grid { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .demo-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+@media (max-width: 768px) {
+  :root { --section-pad: 60px; }
+  .container { padding: 0 20px; }
+  .hero-content { grid-template-columns: 1fr; padding: 120px 20px 60px; gap: 40px; }
+  .hero-right { display: none; }
+  .hero-title { font-size: 40px; }
+  .nav-links, .nav-actions { display: none; }
+  .mobile-menu-btn { display: flex; }
+  .nav-inner { padding: 20px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-subscribe { flex-direction: column; gap: 20px; }
+  .contact-form-wrap { padding: 24px; }
+  .modal-box { padding: 28px 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header" class="transparent">
+  <nav class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')">
+      <div class="logo-text">SD <span>Digital Hub</span></div>
+    </div>
+    <div class="nav-links">
+      <span class="nav-link" data-page="home" onclick="showPage('home')">Home</span>
+      <span class="nav-link" data-page="about" onclick="showPage('about')">About</span>
+      <span class="nav-link" data-page="blog" onclick="showPage('blog')">Blog</span>
+      <span class="nav-link" data-page="demo" onclick="showPage('demo')">Services</span>
+      <span class="nav-link" data-page="team" onclick="showPage('team')">Team</span>
+      <span class="nav-link" data-page="contact" onclick="showPage('contact')">Contact</span>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-primary" onclick="openModal('call-modal')">📞 Request a Call</button>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav" class="mobile-nav">
+  <button class="mobile-nav-close" onclick="toggleMobileNav()">✕</button>
+  <span class="nav-link" onclick="showPage('home');toggleMobileNav()">Home</span>
+  <span class="nav-link" onclick="showPage('about');toggleMobileNav()">About</span>
+  <span class="nav-link" onclick="showPage('blog');toggleMobileNav()">Blog</span>
+  <span class="nav-link" onclick="showPage('demo');toggleMobileNav()">Services</span>
+  <span class="nav-link" onclick="showPage('team');toggleMobileNav()">Team</span>
+  <span class="nav-link" onclick="showPage('contact');toggleMobileNav()">Contact</span>
+  <button class="btn btn-primary" onclick="openModal('call-modal');toggleMobileNav()" style="margin-top:16px;">Request a Call</button>
+</div>
+
+<!-- HOME PAGE -->
+<div id="page-home" class="page active">
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">✦Digital Agency</div>
+        <h1 class="hero-title">
+          SD<br>
+          <span class="line-gold">DIGITAL</span><br>
+          <span class="line-outline">HUB</span>
+        </h1>
+        <p class="hero-desc">Strategy. Design. Technology. We build digital experiences that captivate audiences and drive extraordinary results for ambitious brands.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="openModal('call-modal')">📞 Request a Call</button>
+          <a href="demo.html" class="btn btn-outline">
+            <span>View Demo</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <canvas id="orbit-canvas" width="500" height="500"></canvas>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('home-services').scrollIntoView({behavior:'smooth'})">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <div class="marquee-strip">
+    <div class="marquee-inner">
+      <span>Web Design</span><span>Brand Identity</span><span>Digital Marketing</span>
+      <span>Mobile Apps</span><span>SEO Strategy</span><span>UI/UX Design</span>
+      <span>E-Commerce</span><span>AI Solutions</span><span>Analytics</span>
+      <span>Web Design</span><span>Brand Identity</span><span>Digital Marketing</span>
+      <span>Mobile Apps</span><span>SEO Strategy</span><span>UI/UX Design</span>
+      <span>E-Commerce</span><span>AI Solutions</span><span>Analytics</span>
+    </div>
+  </div>
+
+  <section class="section" id="home-services">
+    <div class="container">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:0">
+        <div>
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Our <span>Services</span></h2>
+        </div>
+      </div>
+      <div class="services-grid reveal"></div>
+    </div>
+  </section>
+
+  <div class="stats-section">
+    <div class="stats-grid"></div>
+  </div>
+
+  <section class="section section-dark">
+    <div class="container" style="text-align:center">
+      <span class="section-label reveal">Ready to Launch?</span>
+      <h2 class="section-title reveal" style="max-width:600px;margin:0 auto 20px">
+        Let's Build Something <span>Extraordinary</span>
+      </h2>
+      <p class="section-subtitle reveal" style="margin:0 auto 40px;text-align:center">
+        Join 50+ businesses that trusted SD Digital Hub to transform their digital presence.
+      </p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap" class="reveal">
+        <button class="btn btn-primary" onclick="openModal('call-modal')">📞 Request a Call</button>
+        <button class="btn btn-outline" onclick="showPage('contact')">Contact Us →</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="page-about" class="page">
+  <div class="about-hero">
+    <div class="container">
+      <p class="page-hero-tag">Our Story</p>
+      <h1 class="page-hero-title">We Are <em>SD Digital</em><br>Hub</h1>
+    </div>
+  </div>
+  <section class="about-story">
+    <div class="container">
+      <div class="about-story-grid">
+        <div class="about-story-visual reveal">
+          <div class="about-story-img">
+            <div class="about-story-img-inner">🚀</div>
+          </div>
+          <div class="about-story-badge">
+            <strong>2026</strong>
+            <span>Founded</span>
+          </div>
+        </div>
+        <div class="about-story-text reveal reveal-delay-2">
+          <span class="section-label">We Are Student</span>
+          <h2 class="section-title">Built on <span>Passion</span>,<br>Driven by Results</h2>
+          <p>SD Digital Hub was born from a simple belief: every brand deserves world-class digital execution. We've been the strategic partner for businesses ready to evolve, scale, and lead in their industries.</p>
+          <p>We're a team of strategists, designers, engineers, and storytellers working with one mission — your growth. We don't just deliver projects; we build long-term partnerships that fuel sustainable success.</p>
+          <div class="about-values">
+            <div class="about-value"><h4>🎯 Purpose-Driven</h4><p>Every decision serves your goals.</p></div>
+            <div class="about-value"><h4>⚡ Fast & Agile</h4><p>Rapid iteration without compromising quality.</p></div>
+            <div class="about-value"><h4>🤝 Transparent</h4><p>No surprises — just honest, open collaboration.</p></div>
+            <div class="about-value"><h4>💡 Innovative</h4><p>Always exploring what's next.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="stats-section">
+    <div class="stats-grid" id="about-stats-grid"></div>
+  </div>
+</div>
+
+<!-- BLOG PAGE -->
+<div id="page-blog" class="page">
+  <div class="about-hero">
+    <div class="container">
+      <p class="page-hero-tag">Insights & Ideas</p>
+      <h1 class="page-hero-title">The SD Digital <em>Blog</em></h1>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid" id="blog-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICES PAGE -->
+<div id="page-demo" class="page">
+  <div class="about-hero">
+    <div class="container">
+      <p class="page-hero-tag">What We Offer</p>
+      <h1 class="page-hero-title">Our <em>Services</em> &amp;<br>Solutions</h1>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="demo-grid" id="demo-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- TEAM PAGE -->
+<div id="page-team" class="page">
+  <div class="about-hero">
+    <div class="container">
+      <p class="page-hero-tag">The Crew</p>
+      <h1 class="page-hero-title">Meet the <em>Minds</em><br>Behind SD Digital Hub</h1>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="team-grid" id="team-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="page-contact" class="page">
+  <section class="section-dark" style="padding:120px 0 80px">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <span class="section-label">Get in Touch</span>
+          <h2>Let's Start a<br><em>Conversation</em></h2>
+          <p>Fill out the form and our team will get back to you within 12 hours.</p>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text"><strong>Phone</strong><span id="footer-phone">+91 9973362849</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text"><strong>Email</strong><span id="footer-email">sdhelp.in@gmail.com</span></div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text"><strong>Office</strong><span id="footer-address">Narkatiaganj</span></div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal reveal-delay-2">
+          <div id="contact-form-area">
+            <h3 class="form-title">Send us a Message</h3>
+            <p class="form-subtitle">All fields are required. We'll respond within 24 hours.</p>
+            <div class="form-row">
+              <div class="form-group"><label>Full Name *</label><input type="text" id="cf-name" placeholder="John Smith"></div>
+              <div class="form-group"><label>Mobile Number *</label><input type="tel" id="cf-phone" placeholder="+91 98765 43210"></div>
+            </div>
+            <div class="form-group"><label>Email Address *</label><input type="email" id="cf-email" placeholder="john@company.com"></div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Business Category *</label>
+                <select id="cf-category">
+                  <option value="">Select category...</option>
+                  <option>E-Commerce</option><option>Healthcare</option><option>Education</option>
+                  <option>Finance</option><option>Real Estate</option><option>Tech Solution</option>
+                  <option>Support Team</option><option>Automation</option><option>Travel</option><option>Other</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Business Name *</label><input type="text" id="cf-biz-name" placeholder="Your Company Ltd."></div>
+            </div>
+            <div class="form-group"><label>Business Details *</label><textarea id="cf-biz-detail" rows="3" placeholder="Tell us about your business..."></textarea></div>
+            <div class="form-group"><label>Message *</label><textarea id="cf-message" rows="3" placeholder="How can we help you?"></textarea></div>
+            <button class="form-submit" onclick="submitContactForm()">Send Message →</button>
+          </div>
+          <div class="form-success" id="contact-success">
+            <div class="success-icon">🎉</div>
+            <h3>Message Received!</h3>
+            <p>Thank you for reaching out. Our team will contact you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">SD <span>Digital Hub</span></div>
+        <p>Strategy, design, and technology working in perfect alignment for your digital growth.</p>
+        <div class="footer-socials">
+          <a class="footer-social-link" href="#" target="_blank" title="LinkedIn">in</a>
+          <a class="footer-social-link" href="#" target="_blank" title="Twitter">𝕏</a>
+          <a class="footer-social-link" href="#" target="_blank" title="Instagram">ig</a>
+          <a class="footer-social-link" href="#" target="_blank" title="Facebook">fb</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a onclick="showPage('about')">About Us</a></li>
+          <li><a onclick="showPage('team')">Our Team</a></li>
+          <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a onclick="showPage('demo')">Web Design</a></li>
+          <li><a onclick="showPage('demo')">Brand Identity</a></li>
+          <li><a onclick="showPage('demo')">Digital Marketing</a></li>
+          <li><a onclick="showPage('demo')">Support Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919973362849" id="foot-phone-link">+91 9973362849</a></li>
+          <li><a href="mailto:sdhelp.in@gmail.com" id="foot-email-link">sdhelp.in@gmail.com</a></li>
+          <li><a id="foot-addr-link">Narkatiaganj </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-subscribe">
+      <div class="footer-subscribe-text">
+        <h4>Stay Updated 🚀</h4>
+        <p>Get insights, updates, and agency news delivered to your inbox.</p>
+      </div>
+      <div class="subscribe-form">
+        <input type="email" id="subscribe-email" class="subscribe-input" placeholder="your@email.com">
+        <button class="subscribe-btn" onclick="handleSubscribe()">Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SD Digital Hub. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a>Privacy Policy</a>
+        <a>Terms of Service</a>
+        <a>Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+
+
+
+
+<!-- REQUEST A CALL MODAL -->
+<div id="call-modal" class="modal-overlay" onclick="closeModalOutside(event,'call-modal')">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('call-modal')">✕</button>
+    <div id="call-form-area">
+      <div class="modal-icon">📞</div>
+      <h2 class="modal-title">Request a Call</h2>
+      <p class="modal-subtitle">Fill in your details and our team will call you back within 2 hours.</p>
+      <div class="form-group"><label>Full Name *</label><input type="text" id="rc-name" placeholder="John Smith"></div>
+      <div class="form-group"><label>Phone Number *</label><input type="tel" id="rc-phone" placeholder="+91 98765 43210"></div>
+      <div class="form-group"><label>Email Address *</label><input type="email" id="rc-email" placeholder="john@company.com"></div>
+      <div class="form-group"><label>Business Name *</label><input type="text" id="rc-business" placeholder="Your Company"></div>
+      <button class="form-submit" onclick="submitCallRequest()">Request Callback →</button>
+    </div>
+    <div class="form-success" id="call-success">
+      <div class="success-icon">✅</div>
+      <h3>Request Received!</h3>
+      <p>We'll call you back within 2 hours during business hours.</p>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<!-- JAVASCRIPT -->
+<script>
+'use strict';
+
+/* ── Supabase Helper ─────────────────────────────────────────── */
+async function supabase(path, options = {}) {
+  try {
+    const res = await fetch(SUPABASE_URL + '/rest/v1/' + path, {
+      ...options,
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Prefer': (options.method === 'POST') ? 'return=minimal' : '',
+        ...(options.headers || {})
+      }
+    });
+    if (!res.ok) {
+      const err = await res.text();
+      console.error('SUPABASE ERROR:', res.status, err);
+      return null;
+    }
+    if (res.status === 204) return true;
+    const text = await res.text();
+    return text ? JSON.parse(text) : true;
+  } catch (e) {
+    console.error('FETCH ERROR:', e);
+    return null;
+  }
+}
+
+/* ── Page Navigation ─────────────────────────────────────────── */
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const page = document.getElementById('page-' + pageId);
+  if (page) { page.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.toggle('active', l.dataset.page === pageId));
+  trackVisit(pageId);
+  if (pageId === 'home') { renderServicesGrid(); renderStatsGrid('#page-home .stats-grid'); startOrbitAnimation(); }
+  if (pageId === 'blog') renderBlogGrid();
+  if (pageId === 'demo') renderDemoGrid();
+  if (pageId === 'team') renderTeamGrid();
+  if (pageId === 'about') renderStatsGrid('#about-stats-grid');
+  setTimeout(initReveal, 100);
+}
+
+/* ── Dynamic Rendering ───────────────────────────────────────── */
+function renderServicesGrid() {
+  const grid = document.querySelector('#page-home .services-grid');
+  if (!grid) return;
+  grid.innerHTML = SERVICES.map(s => `
+    <div class="service-card reveal" onclick="showPage('demo')">
+      <span class="service-icon">${s.icon}</span>
+      <h3>${s.title}</h3>
+      <p>${s.desc}</p>
+      <div class="service-card-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </div>`).join('');
+}
+
+function renderStatsGrid(selector) {
+  const grid = document.querySelector(selector);
+  if (!grid) return;
+  grid.innerHTML = STATS.map(s => `
+    <div class="stat-item">
+      <span class="stat-number">${s.number}</span>
+      <span class="stat-label">${s.label}</span>
+    </div>`).join('');
+}
+
+async function renderBlogGrid() {
+  const grid = document.getElementById('blog-grid');
+  if (!grid) return;
+  grid.innerHTML = '<div class="blog-empty"><span>⏳</span>Loading posts...</div>';
+  const posts = await supabase('blogs?select=*&order=created_at.desc', { method: 'GET' });
+  BLOG_POSTS = posts || [];
+  const icons = ['✍️','💡','🎯','🌟','⚡','🔥'];
+  if (!BLOG_POSTS.length) {
+    grid.innerHTML = '<div class="blog-empty"><span>📝</span><p>No blog posts yet. Check back soon!</p></div>';
+    return;
+  }
+  grid.innerHTML = BLOG_POSTS.map((post, i) => `
+    <div class="blog-card reveal" style="transition-delay:${i*0.1}s" onclick="openBlogPost(${post.id})">
+      <div class="blog-card-image">
+        ${post.image ? `<img src="${post.image}" alt="${escHtml(post.title)}">` : icons[i % icons.length]}
+        <div class="blog-card-cat">${escHtml(post.category || 'General')}</div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-meta">
+          <span>${new Date(post.created_at).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</span>
+          <span>${post.read_time || '5 min read'}</span>
+        </div>
+        <h3>${escHtml(post.title)}</h3>
+        <p>${escHtml((post.content || '').substring(0, 155))}${(post.content || '').length > 155 ? '...' : ''}</p>
+        <a class="blog-card-link">Read Article →</a>
+      </div>
+    </div>`).join('');
+  setTimeout(initReveal, 50);
+}
+
+function openBlogPost(id) {
+  const post = BLOG_POSTS.find(p => p.id === id);
+  if (!post) return;
+  document.getElementById('blog-modal-title').textContent = post.title;
+  document.getElementById('blog-modal-content').innerHTML = post.content || '';
+  document.getElementById('blog-modal-meta').textContent = new Date(post.created_at).toLocaleDateString('en-IN',{weekday:'long',year:'numeric',month:'long',day:'numeric'}) + ' · ' + (post.category || '') + ' · ' + (post.read_time || '5 min read');
+  if (post.image) {
+    document.getElementById('blog-modal-img').src = post.image;
+    document.getElementById('blog-modal-img').style.display = 'block';
+  } else {
+    document.getElementById('blog-modal-img').style.display = 'none';
+  }
+  openModal('blog-modal');
+}
+
+function renderDemoGrid() {
+  const grid = document.getElementById('demo-grid');
+  if (!grid) return;
+  grid.innerHTML = SERVICES.map((s, i) => `
+    <div class="demo-card reveal" style="transition-delay:${i*0.1}s">
+      <div class="demo-card-icon">${s.icon}</div>
+      <h3>${s.title}</h3>
+      <p>${s.desc}</p>
+      <ul class="demo-features">
+        <li>Custom strategy & planning</li>
+        <li>Expert team execution</li>
+        <li>Regular progress reports</li>
+        <li>Post-launch support</li>
+      </ul>
+      <button class="btn btn-blue" onclick="openModal('call-modal')">Get Started →</button>
+    </div>`).join('');
+  setTimeout(initReveal, 50);
+}
+
+function renderTeamGrid() {
+  const grid = document.getElementById('team-grid');
+  if (!grid) return;
+  const emojis = ['👨‍💼','👩‍🎨','👨‍💻','👩‍📊','🧑‍🚀','👩‍💼'];
+  grid.innerHTML = TEAM_MEMBERS.map((m, i) => `
+    <div class="team-card reveal" style="transition-delay:${i*0.1}s">
+      <div class="team-photo">
+        ${m.photo ? `<img src="${m.photo}" alt="${m.name}" style="width:100%;height:100%;object-fit:cover">` : `<div class="team-photo-placeholder">${emojis[i%emojis.length]}</div>`}
+        <div class="team-photo-overlay">
+          <a class="team-social-btn" href="${m.linkedin}" target="_blank">in</a>
+          <a class="team-social-btn" href="${m.twitter}" target="_blank">𝕏</a>
+        </div>
+      </div>
+      <h3>${m.name}</h3>
+      <p class="role">${m.role}</p>
+      <p class="bio">${m.bio}</p>
+    </div>`).join('');
+  setTimeout(initReveal, 50);
+}
+
+/* ── Apply Config ────────────────────────────────────────────── */
+function applyConfig() {
+  ['footer-phone','foot-phone-link'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = AGENCY_PHONE; });
+  ['footer-email','foot-email-link'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = AGENCY_EMAIL; });
+  ['footer-address','foot-addr-link'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = AGENCY_ADDRESS; });
+  const lcr = document.getElementById('live-chat-response');
+  if (lcr) lcr.textContent = LIVE_CHAT_RESPONSE;
+}
+
+/* ── Header scroll ───────────────────────────────────────────── */
+function initHeaderScroll() {
+  const h = document.getElementById('site-header');
+  const onScroll = () => {
+    if (window.scrollY > 50) { h.classList.remove('transparent'); h.classList.add('scrolled'); }
+    else { h.classList.add('transparent'); h.classList.remove('scrolled'); }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+/* ── Scroll Reveal ───────────────────────────────────────────── */
+function initReveal() {
+  const els = document.querySelectorAll('.reveal:not(.revealed)');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  els.forEach(el => obs.observe(el));
+}
+
+/* ── Canvas Animations ───────────────────────────────────────── */
+function startOrbitAnimation() {
+  const canvas = document.getElementById('orbit-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height, cx = W/2, cy = H/2;
+  const orbitals = [
+    { rx:180, ry:60, angle:0, speed:0.008, color:'#D4AF37', size:10 },
+    { rx:130, ry:45, angle:Math.PI/2, speed:0.013, color:'#5A8FE8', size:8 },
+    { rx:220, ry:75, angle:Math.PI, speed:0.005, color:'rgba(212,175,55,0.5)', size:6 }
+  ];
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    const g = ctx.createRadialGradient(cx-20, cy-20, 5, cx, cy, 55);
+    g.addColorStop(0, '#2060D0'); g.addColorStop(0.5, '#0A2463'); g.addColorStop(1, '#030D2B');
+    ctx.beginPath(); ctx.arc(cx, cy, 55, 0, Math.PI*2); ctx.fillStyle = g; ctx.fill();
+    ctx.beginPath(); ctx.arc(cx, cy, 58, 0, Math.PI*2); ctx.strokeStyle = 'rgba(212,175,55,0.3)'; ctx.lineWidth = 2; ctx.stroke();
+    ctx.beginPath(); ctx.arc(cx, cy, 12, 0, Math.PI*2); ctx.fillStyle = '#D4AF37'; ctx.fill();
+    orbitals.forEach((orb, idx) => {
+      ctx.beginPath(); ctx.save(); ctx.translate(cx, cy); ctx.rotate(idx * 0.4); ctx.scale(1, orb.ry/orb.rx);
+      ctx.arc(0, 0, orb.rx, 0, Math.PI*2); ctx.restore();
+      ctx.strokeStyle = idx === 0 ? 'rgba(212,175,55,0.2)' : 'rgba(90,143,232,0.15)'; ctx.lineWidth = 1; ctx.stroke();
+      const bx = cx + orb.rx * Math.cos(orb.angle), by = cy + orb.ry * Math.sin(orb.angle);
+      const grad = ctx.createRadialGradient(bx, by, 0, bx, by, orb.size*2.5);
+      grad.addColorStop(0, orb.color); grad.addColorStop(1, 'transparent');
+      ctx.beginPath(); ctx.arc(bx, by, orb.size*2.5, 0, Math.PI*2); ctx.fillStyle = grad; ctx.fill();
+      ctx.beginPath(); ctx.arc(bx, by, orb.size, 0, Math.PI*2); ctx.fillStyle = orb.color; ctx.fill();
+      orb.angle += orb.speed;
+    });
+    if (!window.orbitParticles) {
+      window.orbitParticles = Array.from({length:60}, () => ({ x:Math.random()*W, y:Math.random()*H, r:Math.random()*1.5+0.5, alpha:Math.random()*0.5+0.1, speed:Math.random()*0.3+0.1 }));
+    }
+    window.orbitParticles.forEach(p => {
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2); ctx.fillStyle = `rgba(212,175,55,${p.alpha})`; ctx.fill();
+      p.y -= p.speed; if (p.y < 0) { p.y = H; p.x = Math.random()*W; }
+    });
+    window._orbitAnimFrame = requestAnimationFrame(draw);
+  }
+  if (window._orbitAnimFrame) cancelAnimationFrame(window._orbitAnimFrame);
+  draw();
+}
+
+function initHeroCanvas() {
+  const canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+  resize(); window.addEventListener('resize', resize);
+  const stars = Array.from({length:150}, () => ({ x:Math.random(), y:Math.random(), r:Math.random()*1.2+0.3, alpha:Math.random()*0.6+0.1, twinkle:Math.random()*0.02 }));
+  let t = 0;
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); t += 0.01;
+    stars.forEach(s => {
+      const a = s.alpha + Math.sin(t + s.x*10) * s.twinkle;
+      ctx.beginPath(); ctx.arc(s.x*canvas.width, s.y*canvas.height, s.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(255,255,255,${Math.max(0.05,a)})`; ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+}
+
+/* ── Floating Chat Buttons ───────────────────────────────────── */
+
+
+
+/* ── Modals ──────────────────────────────────────────────────── */
+function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
+function closeModalOutside(e, id) { if (e.target.id === id) closeModal(id); }
+
+/* ── Form Submissions ────────────────────────────────────────── */
+async function submitCallRequest() {
+  const name = document.getElementById('rc-name').value.trim();
+  const phone = document.getElementById('rc-phone').value.trim();
+  const email = document.getElementById('rc-email').value.trim();
+  const biz = document.getElementById('rc-business').value.trim();
+  if (!name || !phone || !email || !biz) { showToast('⚠️ Please fill in all required fields.'); return; }
+  const data = { name, phone, email, business: biz, status: 'new', timestamp: new Date().toISOString() };
+  const callRes = await supabase('call_requests', { method: 'POST', body: JSON.stringify(data) });
+  if (callRes === null) { showToast('❌ Failed to submit. Please call us directly or try again.'); return; }
+  document.getElementById('call-form-area').style.display = 'none';
+  document.getElementById('call-success').style.display = 'block';
+  showToast('✅ Call request submitted! We\'ll call you soon.');
+}
+
+async function submitContactForm() {
+  const name = document.getElementById('cf-name').value.trim();
+  const phone = document.getElementById('cf-phone').value.trim();
+  const email = document.getElementById('cf-email').value.trim();
+  const category = document.getElementById('cf-category').value;
+  const bizName = document.getElementById('cf-biz-name').value.trim();
+  const bizDetail = document.getElementById('cf-biz-detail').value.trim();
+  const message = document.getElementById('cf-message').value.trim();
+  if (!name||!phone||!email||!category||!bizName||!bizDetail||!message) { showToast('⚠️ Please fill in all required fields.'); return; }
+  const data = { name, phone, email, category, business_name: bizName, business_detail: bizDetail, message, status: 'new', created_at: new Date().toISOString() };
+  const cfRes = await supabase('contact_forms', { method: 'POST', body: JSON.stringify(data) });
+  if (cfRes === null) { showToast('❌ Failed to send. Please email us directly or try again.'); return; }
+  document.getElementById('contact-form-area').style.display = 'none';
+  document.getElementById('contact-success').style.display = 'block';
+  showToast('✅ Message sent! We\'ll get back to you within 24 hours.');
+}
+
+async function handleSubscribe() {
+  const email = document.getElementById('subscribe-email').value.trim();
+  if (!email || !email.includes('@')) { showToast('⚠️ Please enter a valid email address.'); return; }
+  const subRes = await supabase('subscribers', { method: 'POST', body: JSON.stringify({ email, subscribed_at: new Date().toISOString() }) });
+  if (subRes === null) { showToast('❌ Subscription failed. Please try again later.'); return; }
+  document.getElementById('subscribe-email').value = '';
+  showToast('🎉 Subscribed! Welcome to SD Digital Hub family.');
+}
+
+/* ── Visitor Tracking ────────────────────────────────────────── */
+async function trackVisit(page) {
+  try {
+    await supabase('page_views', { method: 'POST', body: JSON.stringify({ page, viewed_at: new Date().toISOString() }) });
+  } catch {}
+}
+
+/* ── Utils ───────────────────────────────────────────────────── */
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3500);
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function toggleMobileNav() {
+  document.getElementById('mobile-nav').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('mobile-nav').classList.contains('open') ? 'hidden' : '';
+}
+
+/* ── Hash Routing ────────────────────────────────────────────── */
+function handleHash() {
+  const hash = window.location.hash.replace('#', '');
+  if (hash && ['home','about','blog','demo','team','contact'].includes(hash)) showPage(hash);
+}
+window.addEventListener('hashchange', handleHash);
+
+/* ── INIT ────────────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  applyConfig();
+  initHeaderScroll();
+  initHeroCanvas();
+  showPage('home');
+  handleHash();
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id));
+  });
+});
+</script>
+
+<!-- BLOG POST MODAL (dynamically filled) -->
+<div id="blog-modal" class="modal-overlay" onclick="closeModalOutside(event,'blog-modal')" style="align-items:flex-start;padding-top:60px">
+  <div class="modal-box" style="max-width:680px">
+    <button class="modal-close" onclick="closeModal('blog-modal')">✕</button>
+    <img id="blog-modal-img" src="" alt="" style="width:100%;border-radius:10px;margin-bottom:20px;display:none">
+    <p id="blog-modal-meta" style="font-size:12px;color:var(--gray-400);margin-bottom:12px;font-family:var(--font-mono)"></p>
+    <h2 id="blog-modal-title" class="modal-title"></h2>
+    <div id="blog-modal-content" style="margin-top:20px;font-size:16px;color:var(--gray-600);line-height:1.8"></div>
+  </div>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a1a8443c9295e1c38f032ca/1jprp9am5';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
