@@ -1,0 +1,108 @@
+# robots.txt — SD Digital Hub
+# https://sddigitalhub.in
+# Last updated: 2025-06-01
+
+# ──────────────────────────────────────────────
+#  Allow all major search engine bots
+# ──────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /.env
+Disallow: /config/
+Disallow: /uploads/
+Disallow: /tmp/
+Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /.env
+Disallow: /config/
+Disallow: /uploads/
+Disallow: /tmp/
+Crawl-delay: 3
+
+User-agent: Slurp
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /.env
+Disallow: /config/
+Crawl-delay: 5
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /.env
+
+# ──────────────────────────────────────────────
+#  Block bad / spam bots
+# ──────────────────────────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+# ──────────────────────────────────────────────
+#  Default: all other bots — block sensitive paths only
+# ──────────────────────────────────────────────
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /demo.html
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Block sensitive & private paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /rest/
+Disallow: /private/
+Disallow: /config/
+Disallow: /uploads/
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.env.production
+Disallow: /node_modules/
+Disallow: /supabase/
+Disallow: /database/
+Disallow: /backup/
+Disallow: /*password*
+Disallow: /*secret*
+Disallow: /*token*
+Disallow: /*apikey*
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cgi-bin/
+
+# ──────────────────────────────────────────────
+#  Sitemap location
+# ──────────────────────────────────────────────
+Sitemap: https://sddigitalhub.in/sitemap.xml
