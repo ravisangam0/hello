@@ -114,14 +114,73 @@
 
   // ── Services ─────────────────────────────────────────────────
   const SERVICES = [
-    { icon: '🌐', title: 'Web Design & Dev', desc: 'Pixel-perfect websites built for performance and conversion.' },
-    { icon: '🎨', title: 'Brand Identity', desc: 'Logos, guidelines, and visual systems that define your brand.' },
-    { icon: '📈', title: 'Digital Marketing', desc: 'SEO, PPC, and social strategies that drive real results.' },
-    { icon: '📱', title:  'Support Team', desc: 'we offer 24*7 chat support team & call support team.' },
-    { icon: '🤖', title: 'AI Solutions', desc: 'Custom AI tools and automation to scale your operations.' },
-    { icon: '📊', title: 'Analytics & SEO', desc: 'Data insights and optimization that keep you ahead.' }
-  ];
-
+{
+  icon: '💻',
+  title: 'Website Development',
+  desc: 'Modern, fast and mobile-friendly websites designed to grow your business online.',
+  features: [
+    'Custom Business Website',
+    'Mobile Responsive Design',
+    'Fast Loading Speed',
+    'SEO Friendly Structure'
+  ]
+},
+{
+  icon: '🎨',
+  title: 'Brand Identity',
+  desc: 'Premium branding solutions that make your business stand out.',
+  features: [
+    'Professional Logo Design',
+    'Brand Color Strategy',
+    'Business Identity Kit',
+    'Marketing Material Design'
+  ]
+},
+{
+  icon: '📈',
+  title: 'Digital Marketing',
+  desc: 'Result-driven marketing strategies to increase leads and sales.',
+  features: [
+    'Lead Generation Campaigns',
+    'Facebook & Instagram Ads',
+    'Google Ads Management',
+    'Performance Tracking'
+  ]
+},
+{
+  icon: '🛠️',
+  title: 'Support Team',
+  desc: 'Reliable support and maintenance for your digital business.',
+  features: [
+    '24/7 Customer Support',
+    'Technical Assistance',
+    'Quick Issue Resolution',
+    'Dedicated Support Manager'
+  ]
+},
+{
+  icon: '🤖',
+  title: 'AI Solutions',
+  desc: 'Smart AI tools and automation to scale your operations.',
+  features: [
+    'AI Chatbot Integration',
+    'Business Automation',
+    'Lead Capture Systems',
+    'Workflow Optimization'
+  ]
+},
+{
+  icon: '📊',
+  title: 'Analytics & SEO',
+  desc: 'Data-driven insights and optimization to improve growth.',
+  features: [
+    'Keyword Research',
+    'On-Page SEO Setup',
+    'Google Ranking Strategy',
+    'Monthly Performance Reports'
+  ]
+}
+];
   const STATS = [
     { number: '50+', label: 'Projects Delivered' },
     { number: '98%', label: 'Client Satisfaction' },
@@ -942,12 +1001,11 @@ function renderDemoGrid() {
       <div class="demo-card-icon">${s.icon}</div>
       <h3>${s.title}</h3>
       <p>${s.desc}</p>
-      <ul class="demo-features">
-        <li>Custom strategy & planning</li>
-        <li>Expert team execution</li>
-        <li>Regular progress reports</li>
-        <li>Post-launch support</li>
-      </ul>
+     <ul class="demo-features">
+${s.features.map(feature => `
+<li>${feature}</li>
+`).join('')}
+</ul>
       <button class="btn btn-blue" onclick="openModal('call-modal')">Get Started →</button>
     </div>`).join('');
   setTimeout(initReveal, 50);
