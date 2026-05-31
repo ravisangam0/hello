@@ -45,9 +45,9 @@
 
 <!-- Local SEO / Geo Tags -->
 <meta name="geo.region" content="IN-BR">
-<meta name="geo.placename" content="Patna, Bihar, India">
-<meta name="geo.position" content="25.5941;85.1376">
-<meta name="ICBM" content="25.5941, 85.1376">
+<meta name="geo.placename" content="Patna, Bihar, Narkatiaganj, west champaran, east champaran,bettiah">
+<meta name="geo.position" content="25.5941;85.1376 ,26.1209;85.3647,26.6486;84.9089,26.7400;84.7400,26.8028;84.5031,27.1060;84.4630,27.1630;84.3230">
+<meta name="ICBM" content="25.5941, 85.1376 ,26.1209;85.3647,26.6486;84.9089,26.7400;84.7400,26.8028;84.5031,27.1060;84.4630,27.1630;84.3230">
 
 <!-- Schema.org Rich Results for Google -->
 <script type="application/ld+json">
@@ -55,16 +55,16 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "SD Digital Hub",
-  "description": "SD Digital Hub is a leading digital agency in India offering web design, branding, SEO, digital marketing and mobile app development services.",
+  "description": "SD Digital Hub is a leading digital agency in Bihar offering web design, branding, SEO, digital marketing ,support team, and automation & tech solution services.",
   "url": "https://sddigitalhub.in",
   "logo": "https://sddigitalhub.in/logo.png",
   "image": "https://sddigitalhub.in/og-image.jpg",
   "telephone": "+91-9973362849",
   "email": "sdhelp.in@gmail.com",
-  "foundingDate": "2020",
+  "foundingDate": "2026",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Patna",
+    "addressLocality": "west chamnpran",
     "addressRegion": "Bihar",
     "addressCountry": "IN"
   },
@@ -75,8 +75,8 @@
     "opens": "09:00", "closes": "19:00"
   }],
   "priceRange": "₹₹",
-  "areaServed": ["India","Bihar","Patna"],
-  "serviceType": ["Web Design","Web Development","Digital Marketing","SEO","Branding","Mobile App Development"],
+  "areaServed": ["India","Bihar","Patna"," Narkatiaganj"," west champaran", "east champaran","bettiah"],
+  "serviceType": ["Web Design","Web Development","Digital Marketing","SEO","Branding","Automation & Tech Solution", "Support Team"],
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "47", "bestRating": "5" },
   "sameAs": [
     "https://www.facebook.com/sddigitalhub",
@@ -100,26 +100,19 @@
   // ── Agency Details ───────────────────────────────────────────
   const AGENCY_NAME      = 'SD Digital Hub';
   const AGENCY_TAGLINE   = 'Your Digital Partner';
-  const AGENCY_PHONE     = '+91 9973362849';
+  const AGENCY_PHONE     = '+91 8986003559','9973362849';
   const AGENCY_EMAIL     = 'sdhelp.in@gmail.com';
   const AGENCY_ADDRESS   = 'India';
   const WHATSAPP_NUMBER  = '918986003559'; // country code + number, no +
-
-  // ── Admin Access ─────────────────────────────────────────────
   const ADMIN_SECRET_HASH = 'sddigitalhub-admin-2025';
-
-  // ── Chat Config ──────────────────────────────────────────────
-  const LIVE_CHAT_RESPONSE  = 'Responds within 30 minutes';
-  const WHATSAPP_RESPONSE   = 'Responds within 1 hour';
-
-  // ── Services ─────────────────────────────────────────────────
-  const SERVICES = [
+ const SERVICES = [
     { icon: '🌐', title: 'Web Design & Dev', desc: 'Pixel-perfect websites built for performance and conversion.' },
     { icon: '🎨', title: 'Brand Identity', desc: 'Logos, guidelines, and visual systems that define your brand.' },
     { icon: '📈', title: 'Digital Marketing', desc: 'SEO, PPC, and social strategies that drive real results.' },
-    { icon: '📱', title: 'Mobile Apps', desc: 'iOS & Android apps crafted for seamless user experiences.' },
+    { icon: '📱', title: 'Tech Solution', desc: 'iOS & Android apps crafted for seamless user experiences.' },
     { icon: '🤖', title: 'AI Solutions', desc: 'Custom AI tools and automation to scale your operations.' },
-    { icon: '📊', title: 'Analytics & SEO', desc: 'Data insights and optimization that keep you ahead.' }
+    { icon: '📊', title: 'Analytics & SEO', desc: 'Data insights and optimization that keep you ahead.' },
+       { icon: '📊', title: 'Support Team', desc: 'Data insights and optimization that keep you ahead.' }
   ];
 
   const STATS = [
@@ -130,7 +123,7 @@
   ];
 
   const TEAM_MEMBERS = [
-    { name: 'Arjun Mehta', role: 'Founder & CEO', bio: '15+ years in digital strategy and business transformation.', photo: null, linkedin: '#', twitter: '#' },
+    { name: 'Harshvardhan', role: 'Founder & CEO', bio: '15+ years in digital strategy and business transformation.', photo: null, linkedin: '#', twitter: '#' },
     { name: 'Priya Sharma', role: 'Creative Director', bio: 'Award-winning designer with a passion for visual storytelling.', photo: null, linkedin: '#', twitter: '#' },
     { name: 'Rahul Verma', role: 'Head of Technology', bio: 'Full-stack architect building scalable digital products.', photo: null, linkedin: '#', twitter: '#' },
     { name: 'Sneha Patel', role: 'Marketing Strategist', bio: 'Data-driven marketer growing brands across digital channels.', photo: null, linkedin: '#', twitter: '#' }
@@ -515,7 +508,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
     <canvas id="hero-canvas"></canvas>
     <div class="hero-content">
       <div class="hero-left">
-        <div class="hero-badge">✦ Award-Winning Digital Agency</div>
+        <div class="hero-badge">✦ Digital Agency</div>
         <h1 class="hero-title">
           SD<br>
           <span class="line-gold">DIGITAL</span><br>
@@ -525,7 +518,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
         <div class="hero-actions">
           <button class="btn btn-primary" onclick="openModal('call-modal')">📞 Request a Call</button>
           <a href="demo.html" class="btn btn-outline">
-            <span>View Our Work</span>
+            <span>View Demo</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -543,10 +536,10 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
   <div class="marquee-strip">
     <div class="marquee-inner">
       <span>Web Design</span><span>Brand Identity</span><span>Digital Marketing</span>
-      <span>Mobile Apps</span><span>SEO Strategy</span><span>UI/UX Design</span>
+      <span>Suport Team</span><span>SEO Strategy</span><span>UI/UX Design</span>
       <span>E-Commerce</span><span>AI Solutions</span><span>Analytics</span>
       <span>Web Design</span><span>Brand Identity</span><span>Digital Marketing</span>
-      <span>Mobile Apps</span><span>SEO Strategy</span><span>UI/UX Design</span>
+      <span>Support Team</span><span>SEO Strategy</span><span>UI/UX Design</span>
       <span>E-Commerce</span><span>AI Solutions</span><span>Analytics</span>
     </div>
   </div>
@@ -574,7 +567,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
         Let's Build Something <span>Extraordinary</span>
       </h2>
       <p class="section-subtitle reveal" style="margin:0 auto 40px;text-align:center">
-        Join 200+ businesses that trusted SD Digital Hub to transform their digital presence.
+        Join 50+ businesses that trusted SD Digital Hub to transform their digital presence.
       </p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap" class="reveal">
         <button class="btn btn-primary" onclick="openModal('call-modal')">📞 Request a Call</button>
@@ -600,14 +593,16 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
             <div class="about-story-img-inner">🚀</div>
           </div>
           <div class="about-story-badge">
-            <strong>2020</strong>
+            <strong>2026</strong>
             <span>Founded</span>
           </div>
         </div>
         <div class="about-story-text reveal reveal-delay-2">
           <span class="section-label">Who We Are</span>
-          <h2 class="section-title">Built on <span>Passion</span>,<br>Driven by Results</h2>
-          <p>SD Digital Hub was born from a simple belief: every brand deserves world-class digital execution. We've been the strategic partner for businesses ready to evolve, scale, and lead in their industries.</p>
+          <h2 class="section-title">
+               We Are Students <span>
+               Built on <span>Passion</span>,<br>Driven by Results</h2>
+          <p>SD Digital Hub was born from a simple belief: every brand deserves digital execution. We've been the strategic partner for businesses ready to evolve, scale, and lead in their industries.</p>
           <p>We're a team of strategists, designers, engineers, and storytellers working with one mission — your growth. We don't just deliver projects; we build long-term partnerships that fuel sustainable success.</p>
           <div class="about-values">
             <div class="about-value"><h4>🎯 Purpose-Driven</h4><p>Every decision serves your goals.</p></div>
@@ -694,20 +689,20 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
         <div class="contact-form-wrap reveal reveal-delay-2">
           <div id="contact-form-area">
             <h3 class="form-title">Send us a Message</h3>
-            <p class="form-subtitle">All fields are required. We'll respond within 24 hours.</p>
+            <p class="form-subtitle">All fields are required. We'll respond within 12 hours.</p>
             <div class="form-row">
               <div class="form-group"><label>Full Name *</label><input type="text" id="cf-name" placeholder="John Smith"></div>
               <div class="form-group"><label>Mobile Number *</label><input type="tel" id="cf-phone" placeholder="+91 98765 43210"></div>
             </div>
-            <div class="form-group"><label>Email Address *</label><input type="email" id="cf-email" placeholder="john@company.com"></div>
+            <div class="form-group"><label>Email Address *</label><input type="email" id="cf-email" placeholder="help@sddigitalhub.in"></div>
             <div class="form-row">
               <div class="form-group">
                 <label>Business Category *</label>
                 <select id="cf-category">
                   <option value="">Select category...</option>
                   <option>E-Commerce</option><option>Healthcare</option><option>Education</option>
-                  <option>Finance</option><option>Real Estate</option><option>Technology</option>
-                  <option>Retail</option><option>Food & Beverage</option><option>Travel</option><option>Other</option>
+                  <option>Finance</option><option>Real Estate</option><option>Support Team</option>
+                  <option>Automation</option><option>Tech Solution</option><option>Travel</option><option>Other</option>
                 </select>
               </div>
               <div class="form-group"><label>Business Name *</label><input type="text" id="cf-biz-name" placeholder="Your Company Ltd."></div>
@@ -719,7 +714,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
           <div class="form-success" id="contact-success">
             <div class="success-icon">🎉</div>
             <h3>Message Received!</h3>
-            <p>Thank you for reaching out. Our team will contact you within 24 hours.</p>
+            <p>Thank you for reaching out. Our team will contact you within 12 hours.</p>
           </div>
         </div>
       </div>
@@ -764,7 +759,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
         <ul>
           <li><a href="tel:+919973362849" id="foot-phone-link">+91 9973362849</a></li>
           <li><a href="mailto:sdhelp.in@gmail.com" id="foot-email-link">sdhelp.in@gmail.com</a></li>
-          <li><a id="foot-addr-link">India</a></li>
+          <li><a id="foot-addr-link">Narkatiaganj</a></li>
         </ul>
       </div>
     </div>
@@ -779,7 +774,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 SD Digital Hub. All rights reserved.</p>
+      <p>© 2026 SD Digital Hub. All rights reserved.</p>
       <div class="footer-bottom-links">
         <a>Privacy Policy</a>
         <a>Terms of Service</a>
