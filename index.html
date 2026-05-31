@@ -337,7 +337,13 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
 .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 60px; background: var(--gray-200); border: 2px solid var(--gray-200); border-radius: 16px; overflow: hidden; }
 .service-card { background: var(--white); padding: 48px 40px; position: relative; transition: background 0.3s; cursor: pointer; }
 .service-card:hover { background: var(--blue-700); }
-.service-icon { font-size: 36px; margin-bottom: 20px; display: block; }
+.service-icon{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    margin-bottom:20px;
+    display:block;
+}
 .service-card h3 { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--blue-700); margin-bottom: 12px; transition: color 0.3s; }
 .service-card p { font-size: 14px; color: var(--gray-500); line-height: 1.65; transition: color 0.3s; }
 .service-card:hover h3 { color: var(--gold-400); }
@@ -929,7 +935,7 @@ function renderServicesGrid() {
   if (!grid) return;
   grid.innerHTML = SERVICES.map(s => `
     <div class="service-card reveal" onclick="showPage('demo')">
-      <span class="service-icon">${s.icon}</span>
+     <img src="${s.icon}" class="service-icon" alt="${s.title}">
       <h3>${s.title}</h3>
       <p>${s.desc}</p>
       <div class="service-card-arrow">
