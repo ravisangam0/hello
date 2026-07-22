@@ -18,31 +18,11 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SD Digital Hub">
 <meta name="twitter:description" content="Your Digital Partner">
-<!-- ============================================================
-     SD DIGITAL HUB — PREMIUM WEBSITE
-     Version: 2.0
-     Color Theme: Royal Blue (#0A2463), White (#FFFFFF), Gold (#D4AF37)
-     Database: Supabase (live integration)
-     ============================================================ -->
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ═══════════════════════════════════════════════════════
-     FULL SEO — SD DIGITAL HUB
-     ═══════════════════════════════════════════════════════ -->
-<title>SD Digital Hub | Web Design & Digital Marketing Agency in India</title>
-<meta name="description" content="SD Digital Hub is a top digital agency in India — web design, branding, SEO, digital marketing & mobile apps. 200+ projects delivered. Call +91 9973362849 for a free quote.">
-<meta name="keywords" content="web design India, digital marketing agency India, website development India, SEO services India, branding agency Patna, mobile app development Bihar, SD Digital Hub, affordable web design India, digital agency Bihar">
-<meta name="author" content="SD Digital Hub">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="theme-color" content="#0A2463">
-<meta name="revisit-after" content="7 days">
-<meta name="language" content="English">
-<link rel="canonical" href="https://sddigitalhub.in/">
-<link rel="icon" type="image/x-icon" href="/favicon.png">
 
-<!-- Open Graph (WhatsApp, Facebook, LinkedIn previews) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sddigitalhub.in/">
 <meta property="og:title" content="SD Digital Hub | Web Design & Digital Marketing Agency in India">
@@ -108,28 +88,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- ══ CONFIGURATION ══════════════════════════════════════════ -->
+
 <script>
-  // ── Supabase Config ──────────────────────────────────────────
+  
   const SUPABASE_URL     = 'https://uihfadvfmxkikoncytae.supabase.co';
   const SUPABASE_ANON_KEY= 'sb_publishable_6hkSQ2lEF9idzt8deq83Iw_VEInRyKi';
 
-  // ── Agency Details ───────────────────────────────────────────
+  
   const AGENCY_NAME      = 'SD Digital Hub';
   const AGENCY_TAGLINE   = 'Your Digital Partner';
-  const AGENCY_PHONE     = '+91 8986003559';
+  const AGENCY_PHONE     = '+91 9973362849';
   const AGENCY_EMAIL     = 'sdhelp.in@gmail.com';
   const AGENCY_ADDRESS   = 'Narkatiaganj, W-Champaran,Bihar 845455';
-  const WHATSAPP_NUMBER  = '918986003559'; // country code + number, no +
+  const WHATSAPP_NUMBER  = '9973362849'; // country code + number, no +
 
-  // ── Admin Access ─────────────────────────────────────────────
   const ADMIN_SECRET_HASH = 'sddigitalhub-admin-2025';
 
-  // ── Chat Config ──────────────────────────────────────────────
+  
   const LIVE_CHAT_RESPONSE  = 'Responds within 30 minutes';
   const WHATSAPP_RESPONSE   = 'Responds within 1 hour';
 
-  // ── Services ─────────────────────────────────────────────────
+  // ── Services
   const SERVICES = [
 {
   icon: 'images/web devlopment.webp',
@@ -217,9 +196,8 @@
 </script>
 
 <style>
-/* ══════════════════════════════════════════════════════════════
-   CSS VARIABLES
-   ══════════════════════════════════════════════════════════════ */
+/*
+   C */
 :root {
   --blue-900: #030D2B;
   --blue-800: #061952;
@@ -656,7 +634,7 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
         Let's Build Something <span>Extraordinary</span>
       </h2>
       <p class="section-subtitle reveal" style="margin:0 auto 40px;text-align:center">
-        Join 50+ businesses that trusted SD Digital Hub to transform their digital presence.
+        Join 20+ businesses that trusted SD Digital Hub to transform their digital presence.
       </p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap" class="reveal">
         <button class="btn btn-primary" onclick="openModal('call-modal')">📞 Request a Call</button>
@@ -900,22 +878,13 @@ input, textarea, select { font-family: var(--font-body); outline: none; border: 
 
 <div id="toast"></div>
 
-<!-- ══════════════════════════════════════════════════════════════
-     SD DIGITAL HUB — FORM VALIDATION LIBRARY v1.0
-     Handles: Phone (India), Email, Name, Required fields
-     Used by: Contact Form, Call Modal, Subscribe Form
-     ══════════════════════════════════════════════════════════════ -->
+
 <script>
 'use strict';
 
 const SDV = (function () {
 
-  /**
-   * Validate Indian mobile number
-   * - Exactly 10 digits
-   * - First digit must be 6, 7, 8 or 9
-   * - Digits only (letters/symbols/spaces all rejected)
-   */
+ 
   function validatePhone(raw) {
     const val = String(raw || '').trim();
     if (!val) return { ok: false, msg: '⚠️ Phone number is required.' };
@@ -930,12 +899,7 @@ const SDV = (function () {
     return { ok: true, val: digits };
   }
 
-  /**
-   * Validate email address
-   * - Must have local part, @, domain and TLD (2+ chars)
-   * - Rejects: ravi@, @gmail.com, ravi@gmail, test
-   * - Accepts: ravi@gmail.com, info@sddigitalhub.in
-   */
+  
   function validateEmail(raw) {
     const val = String(raw || '').trim();
     if (!val) return { ok: false, msg: '⚠️ Email address is required.' };
@@ -944,13 +908,7 @@ const SDV = (function () {
     return { ok: true };
   }
 
-  /**
-   * Validate name field
-   * - Minimum 2 characters
-   * - Cannot be digits only (e.g. "12345")
-   * - Cannot be special characters only (e.g. "###")
-   * - Must contain at least one letter (Latin or Devanagari)
-   */
+ 
   function validateName(raw) {
     const val = String(raw || '').trim();
     if (!val) return { ok: false, msg: '⚠️ Full name is required.' };
@@ -969,13 +927,7 @@ const SDV = (function () {
     return { ok: true };
   }
 
-  /**
-   * Attach real-time phone input restrictions to an <input> element.
-   * - Allows only numeric characters (0–9)
-   * - Automatically removes any non-numeric characters as the user types
-   * - Auto-limits input to exactly 10 digits
-   * - Handles paste events — strips non-digits from pasted text
-   */
+
   function attachPhoneRestrictions(el) {
     if (!el) return;
     el.setAttribute('inputmode', 'numeric');
@@ -1017,7 +969,7 @@ const SDV = (function () {
 <script>
 'use strict';
 
-/* ── Supabase Helper ─────────────────────────────────────────── */
+
 async function supabase(path, options = {}) {
   try {
     const res = await fetch(SUPABASE_URL + '/rest/v1/' + path, {
@@ -1044,7 +996,7 @@ async function supabase(path, options = {}) {
   }
 }
 
-/* ── Page Navigation ─────────────────────────────────────────── */
+/* ── Page Navigation */
 function showPage(pageId) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const page = document.getElementById('page-' + pageId);
@@ -1059,7 +1011,7 @@ function showPage(pageId) {
   setTimeout(initReveal, 100);
 }
 
-/* ── Dynamic Rendering ───────────────────────────────────────── */
+/* ── Dynamic Rendering */
 function renderServicesGrid() {
   const grid = document.querySelector('#page-home .services-grid');
   if (!grid) return;
@@ -1167,7 +1119,7 @@ function renderTeamGrid() {
   setTimeout(initReveal, 50);
 }
 
-/* ── Apply Config ────────────────────────────────────────────── */
+/* ── Apply Config*/
 function applyConfig() {
   ['footer-phone','foot-phone-link'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = AGENCY_PHONE; });
   ['footer-email','foot-email-link'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = AGENCY_EMAIL; });
@@ -1176,7 +1128,7 @@ function applyConfig() {
   if (lcr) lcr.textContent = LIVE_CHAT_RESPONSE;
 }
 
-/* ── Header scroll ───────────────────────────────────────────── */
+
 function initHeaderScroll() {
   const h = document.getElementById('site-header');
   const onScroll = () => {
@@ -1187,7 +1139,7 @@ function initHeaderScroll() {
   onScroll();
 }
 
-/* ── Scroll Reveal ───────────────────────────────────────────── */
+/* ── Scroll Reveal  */
 function initReveal() {
   const els = document.querySelectorAll('.reveal:not(.revealed)');
   const obs = new IntersectionObserver((entries) => {
@@ -1196,7 +1148,7 @@ function initReveal() {
   els.forEach(el => obs.observe(el));
 }
 
-/* ── Canvas Animations ───────────────────────────────────────── */
+/* ── Canvas Animations  */
 function startOrbitAnimation() {
   const canvas = document.getElementById('orbit-canvas');
   if (!canvas) return;
@@ -1258,23 +1210,23 @@ function initHeroCanvas() {
   draw();
 }
 
-/* ── Floating Chat Buttons ───────────────────────────────────── */
 
 
 
-/* ── Modals ──────────────────────────────────────────────────── */
+
+
 function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
 function closeModal(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
 function closeModalOutside(e, id) { if (e.target.id === id) closeModal(id); }
 
-/* ── Form Submissions ────────────────────────────────────────── */
+
 async function submitCallRequest() {
   const nameVal  = document.getElementById('rc-name').value.trim();
   const phoneVal = document.getElementById('rc-phone').value.trim();
   const emailVal = document.getElementById('rc-email').value.trim();
   const bizVal   = document.getElementById('rc-business').value.trim();
 
-  // ── Strict validation before any Supabase call ────────────────
+  
   const nameCheck = SDV.validateName(nameVal);
   if (!nameCheck.ok) { showToast(nameCheck.msg); document.getElementById('rc-name').focus(); return; }
 
@@ -1286,7 +1238,7 @@ async function submitCallRequest() {
 
   const bizCheck = SDV.validateRequired(bizVal, 'Business Name');
   if (!bizCheck.ok) { showToast(bizCheck.msg); document.getElementById('rc-business').focus(); return; }
-  // ─────────────────────────────────────────────────────────────
+  
 
   const data = { name: nameVal, phone: phoneCheck.val, email: emailVal, business: bizVal, status: 'new', timestamp: new Date().toISOString() };
   const callRes = await supabase('call_requests', { method: 'POST', body: JSON.stringify(data) });
@@ -1305,7 +1257,7 @@ async function submitContactForm() {
   const bizDetail  = document.getElementById('cf-biz-detail').value.trim();
   const message    = document.getElementById('cf-message').value.trim();
 
-  // ── Strict validation before any Supabase call ────────────────
+ 
   const nameCheck = SDV.validateName(nameVal);
   if (!nameCheck.ok) { showToast(nameCheck.msg); document.getElementById('cf-name').focus(); return; }
 
@@ -1326,8 +1278,7 @@ async function submitContactForm() {
 
   const msgCheck = SDV.validateRequired(message, 'Message');
   if (!msgCheck.ok) { showToast(msgCheck.msg); document.getElementById('cf-message').focus(); return; }
-  // ─────────────────────────────────────────────────────────────
-
+  
   const data = { name: nameVal, phone: phoneCheck.val, email: emailVal, category, business_name: bizNameVal, business_detail: bizDetail, message, status: 'new', created_at: new Date().toISOString() };
   const cfRes = await supabase('contact_forms', { method: 'POST', body: JSON.stringify(data) });
   if (cfRes === null) { showToast('❌ Failed to send. Please email us directly or try again.'); return; }
@@ -1339,25 +1290,24 @@ async function submitContactForm() {
 async function handleSubscribe() {
   const emailVal = document.getElementById('subscribe-email').value.trim();
 
-  // ── Strict email validation ───────────────────────────────────
+ 
   const emailCheck = SDV.validateEmail(emailVal);
   if (!emailCheck.ok) { showToast(emailCheck.msg); document.getElementById('subscribe-email').focus(); return; }
-  // ─────────────────────────────────────────────────────────────
-
+ 
   const subRes = await supabase('subscribers', { method: 'POST', body: JSON.stringify({ email: emailVal, subscribed_at: new Date().toISOString() }) });
   if (subRes === null) { showToast('❌ Subscription failed. Please try again later.'); return; }
   document.getElementById('subscribe-email').value = '';
   showToast('🎉 Subscribed! Welcome to SD Digital Hub family.');
 }
 
-/* ── Visitor Tracking ────────────────────────────────────────── */
+
 async function trackVisit(page) {
   try {
     await supabase('page_views', { method: 'POST', body: JSON.stringify({ page, viewed_at: new Date().toISOString() }) });
   } catch {}
 }
 
-/* ── Utils ───────────────────────────────────────────────────── */
+
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg; t.classList.add('show');
@@ -1374,14 +1324,14 @@ function toggleMobileNav() {
   document.body.style.overflow = document.getElementById('mobile-nav').classList.contains('open') ? 'hidden' : '';
 }
 
-/* ── Hash Routing ────────────────────────────────────────────── */
+
 function handleHash() {
   const hash = window.location.hash.replace('#', '');
   if (hash && ['home','about','blog','demo','team','contact'].includes(hash)) showPage(hash);
 }
 window.addEventListener('hashchange', handleHash);
 
-/* ── INIT ────────────────────────────────────────────────────── */
+
 document.addEventListener('DOMContentLoaded', () => {
   applyConfig();
   initHeaderScroll();
@@ -1389,12 +1339,10 @@ document.addEventListener('DOMContentLoaded', () => {
   showPage('home');
   handleHash();
 
-  // ── Attach phone input restrictions to all phone fields ───────
-  // Call Modal phone field
+  
   SDV.attachPhoneRestrictions(document.getElementById('rc-phone'));
   // Contact Form phone field
   SDV.attachPhoneRestrictions(document.getElementById('cf-phone'));
-  // ─────────────────────────────────────────────────────────────
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id));
