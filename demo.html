@@ -652,7 +652,7 @@ a { text-decoration: none; color: inherit; }
   <p>Explore real websites we've designed and built — click any demo to see it live, or contact us to get something just like it.</p>
   <div class="hero-stats">
     <div>
-      <div class="hero-stat-num">50+</div>
+      <div class="hero-stat-num">20+</div>
       <div class="hero-stat-label">Projects Delivered</div>
     </div>
     <div class="hero-divider"></div>
@@ -765,10 +765,7 @@ a { text-decoration: none; color: inherit; }
 
 <div id="toast"></div>
 
-<!-- ══════════════════════════════════════════════════════════════
-     SD DIGITAL HUB — FORM VALIDATION LIBRARY v1.0
-     Handles: Phone (India), Email, Name, Required fields
-     ══════════════════════════════════════════════════════════════ -->
+
 <script>
 'use strict';
 
@@ -880,7 +877,7 @@ const SDV = (function () {
 <script>
 'use strict';
 
-/* ── Supabase ──────────────────────────────────────────────── */
+/* ── Supabase*/
 async function sbPost(table, data) {
   try {
     const res = await fetch(SUPABASE_URL + '/rest/v1/' + table, {
@@ -903,7 +900,7 @@ async function sbPost(table, data) {
   }
 }
 
-/* ── Toast ─────────────────────────────────────────────────── */
+/* ── Toast */
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
@@ -912,7 +909,7 @@ function showToast(msg) {
   t._t = setTimeout(() => t.classList.remove('show'), 3500);
 }
 
-/* ── Modal ─────────────────────────────────────────────────── */
+/* ── Modal  */
 let currentDemo = '';
 function openContactModal(category, demoName) {
   currentDemo = demoName || 'Custom Website';
@@ -929,7 +926,7 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-/* ── Submit Contact ────────────────────────────────────────── */
+/* ── Submit Contact */
 async function submitContact() {
   const nameVal  = document.getElementById('cf-name').value.trim();
   const phoneVal = document.getElementById('cf-phone').value.trim();
@@ -938,7 +935,7 @@ async function submitContact() {
   const category = document.getElementById('cf-category').value;
   const message  = document.getElementById('cf-message').value.trim();
 
-  // ── Strict validation before any Supabase call ────────────────
+  // ── Strict validation before any Supabase call 
   const nameCheck = SDV.validateName(nameVal);
   if (!nameCheck.ok) { showToast(nameCheck.msg); document.getElementById('cf-name').focus(); return; }
 
@@ -947,7 +944,7 @@ async function submitContact() {
 
   const emailCheck = SDV.validateEmail(emailVal);
   if (!emailCheck.ok) { showToast(emailCheck.msg); document.getElementById('cf-email').focus(); return; }
-  // ─────────────────────────────────────────────────────────────
+  // 
 
   const btn = document.getElementById('submit-btn');
   btn.disabled = true;
@@ -977,7 +974,7 @@ async function submitContact() {
   showToast('✅ Message sent! We\'ll contact you soon.');
 }
 
-/* ── Demo Data ─────────────────────────────────────────────── */
+/* ── Demo Data */
 const DEMOS = [
   // ── WEB DESIGN ──
   {
